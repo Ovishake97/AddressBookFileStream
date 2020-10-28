@@ -14,14 +14,14 @@ namespace AddressBookFileStream
         }
 
         public static void SelectChoice() {
-            FileStream file = new FileStream();
+            CSVReader csv = new CSVReader();
             Console.WriteLine("Select from the following options:");
             Console.WriteLine("1. Read file\n2. Write into the file");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice) {
-                case 1: file.ReadFile();
+                case 1: csv.CSVDataReading();
                     break;
-                case 2: file.EnterData();
+                case 2: csv.CSVDataWriting();
                     break;
                 default: Console.WriteLine("Enter valid choice");
                     break;

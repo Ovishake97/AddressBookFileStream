@@ -6,13 +6,13 @@ namespace AddressBookFileStream
 {
     public class AddressBookMain
     {
-        public string firstName;
-        public string lastName;
-        public string address;
-        public string state;
-        public string zip;
-        public string phone;
-        public string email;
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string address { get; set; }
+        public string state { get; set; }
+        public string zip { get; set; }
+        public string phone { get; set; }
+        public string email { get; set; }
 
 
         public AddressBookMain(string firstName, string lastName, string address, string state, string zip, string phone, string email)
@@ -25,7 +25,9 @@ namespace AddressBookFileStream
             this.phone = phone;
             this.email = email;
         }
-        
+        public AddressBookMain() { 
+
+        }
     }
 
 }
